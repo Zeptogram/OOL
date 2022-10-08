@@ -11,11 +11,7 @@ linguaggi object-oriented:
 (2) come rappresentare i metodi e le loro chiamate
 (3) come manipolare il codice nei metodi stessi
 
-----------------------------
-
-PRIMITIVE
-
------------------------------
+***PRIMITIVE
 
 NOME:
 DEF-CLASS
@@ -29,9 +25,7 @@ centralizzata (variabile globale -> *classes-specs*)
 
 Se le condizioni di invocazione sono rispettate, il metodo ritorna 
 il nome della classe 
-
 -----------------------------
-
 NOME:
 CREATE
 
@@ -45,9 +39,7 @@ Se il nome dell'istanza esiste gia', l'istanza precedente viene
 sostituita da quella attuale
 
 Se non esiste, ritorna un errore
-
 -------------------------------
-
 NOME:
 IS-CLASS
 
@@ -56,9 +48,7 @@ SINTASSI:
 
 PARTICOLARI:
 Restituisce T se il simbolo passato e' il nome di una classe
-
 -------------------------------
-
 NOME:
 IS-INSTANCE
 
@@ -67,9 +57,7 @@ SINTASSI:
 
 PARTICOLARI:
 Restituisce T se l’oggetto passato e' l’istanza di una classe
-
 --------------------------------
-
 NOME: 
 <<
 
@@ -84,7 +72,6 @@ classi parents.
 Ritorna lo <slot-value> relativo all'istanza.
 Se <slot-name> non esiste nella classe relativa all'istanza 
 passata, viene segnalato un errore
-
 ---------------------------------
 
 NOME:
@@ -101,9 +88,7 @@ Se <slot-name> non è presente nella classe dell'istanza,
 la funzione ritorna un errore
 
 -------------------------------
-
-FUNZIONI
-
+***FUNZIONI
 -------------------------------
 
 NOME: 
@@ -114,14 +99,12 @@ Se slots non è nullo, estrae i metodi dagli slots,
 ritornando T
 
 -------------------------------
-
 NOME: 
 get-method-names
 
 PARTICOLARI:
 Dato in input una lista che contiene metodi, estrae 
 e restituisce come cons solo i nomi del metodo senza il corpo.
-
 -------------------------------
 
 NOME:
@@ -145,9 +128,7 @@ Se la classe inserita non ha <slots>, ritorna nil.
 
 Se <slots> esiste all'interno della classe, il metodo 
 ritorna T.
-
 -------------------------------
-
 NOME:
 get-class-data
 
@@ -157,9 +138,7 @@ delle classi genitori.
 
 Se non viene trovato <method> o <slot-name>, ritorna un 
 errore.
-
 -------------------------------
-
 NOME:
 process-method
 
@@ -169,9 +148,7 @@ parametro "this".
 
 Permette di richiamare un metodo con la notazione 
 funzionale
-
 -------------------------------
-
 NOME:
 rewrite-method-code
 
@@ -179,11 +156,8 @@ PARTICOLARI:
 Prende come argomenti <method-name> e <method-spec>
 Inserisce con una funzione lambda il parametro 
 this in cima alla lista degli argomenti
-
 -------------------------------
-
-TEST EFFETTUATI
-
+***ALCUNI TEST EFFETTUATI
 -------------------------------
 
 (def-class 'person nil 'name "Eve" 'age 56)
