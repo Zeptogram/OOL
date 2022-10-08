@@ -10,9 +10,9 @@ linguaggi object-oriented:
 (1) il problema di dove e come recuperare i valori ereditati
 (2) come rappresentare i metodi e le loro chiamate
 (3) come manipolare il codice nei metodi stessi
-
-***PRIMITIVE
-
+---------------------------------
+*PRIMITIVE*
+---------------------------------
 NOME:
 DEF-CLASS
 
@@ -73,7 +73,6 @@ Ritorna lo <slot-value> relativo all'istanza.
 Se <slot-name> non esiste nella classe relativa all'istanza 
 passata, viene segnalato un errore
 ---------------------------------
-
 NOME:
 <<*
 
@@ -86,18 +85,15 @@ di <slot-name> nell'ultima istanza
 
 Se <slot-name> non è presente nella classe dell'istanza, 
 la funzione ritorna un errore
-
 -------------------------------
-***FUNZIONI
+*FUNZIONI*
 -------------------------------
-
 NOME: 
 check-method
 
 PARTICOLARI:
 Se slots non è nullo, estrae i metodi dagli slots, 
 ritornando T
-
 -------------------------------
 NOME: 
 get-method-names
@@ -106,7 +102,6 @@ PARTICOLARI:
 Dato in input una lista che contiene metodi, estrae 
 e restituisce come cons solo i nomi del metodo senza il corpo.
 -------------------------------
-
 NOME:
 slot-structure
 
@@ -117,9 +112,7 @@ process-method e get-method-names
 
 Esegue una chiamata ricorsiva con gli elementi 
 della 
-
 -------------------------------
-
 NOME:
 check-slot-exists
 
@@ -157,7 +150,7 @@ Prende come argomenti <method-name> e <method-spec>
 Inserisce con una funzione lambda il parametro 
 this in cima alla lista degli argomenti
 -------------------------------
-***ALCUNI TEST EFFETTUATI
+*ALCUNI TEST EFFETTUATI*
 -------------------------------
 
 (def-class 'person nil 'name "Eve" 'age 56)
