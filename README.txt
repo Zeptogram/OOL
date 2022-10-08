@@ -1,9 +1,4 @@
 ---------------------------
-|					                    |
-|	  202209 - E5P - LISP	  |
-|				                     |
----------------------------
-
 Ai tempi di Simula e del primo Smalltalk, molto molto tempo prima di Python, 
 Ruby, Perl e SLDJ, i programmatori Lisp gi`a producevano una pletora di 
 linguaggi object oriented. Il vostro progetto consiste nella costruzione di 
