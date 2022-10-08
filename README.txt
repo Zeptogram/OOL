@@ -190,5 +190,6 @@ Risultato: T
 Risultato: (OOLINST PERSON ((NAME . "Test") (AGE . 20)))
 
 -------------------------------
-
+ENG: This is an italian project
+-------------------------------
 EOF
