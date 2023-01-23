@@ -155,7 +155,8 @@ Risultato: T
 Risultato: (OOLINST PERSON ((NAME . "Test") (AGE . 20)))
 
 # Autori e Info
-ENG: This is an italian project, Doc and comments in italian.
+ENG: This is an italian project, Doc and comments in italian. Grade: 28/30
  
 Made by Elio Gargiulo, Stefano Rigato for UNIMIB Linguaggi di Programmazione Course.
+
 
