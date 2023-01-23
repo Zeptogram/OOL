@@ -1,19 +1,19 @@
----------------------------
+# INTRODUZIONE
+
 Ai tempi di Simula e del primo Smalltalk, molto molto tempo prima di Python, 
-Ruby, Perl e SLDJ, i programmatori Lisp gi`a producevano una pletora di 
+Ruby, Perl e SLDJ, i programmatori Lisp già producevano una pletora di 
 linguaggi object oriented. Il vostro progetto consiste nella costruzione di 
 un’estensione “object oriented” di Common Lisp, chiamata OOΛ, e di 
 un’estensione “object oriented” di Prolog, chiamata OOΠ. 
-
-OOΛ `e un linguaggio object-oriented con eredita' multipla. Il suo scopo e' 
+OOΛ è un linguaggio object-oriented con eredita' multipla. Il suo scopo e' 
 didattico e mira soprattutto ad evidenziare aspetti dell’implementazione di 
 linguaggi object-oriented:
-(1) il problema di dove e come recuperare i valori ereditati
-(2) come rappresentare i metodi e le loro chiamate
-(3) come manipolare il codice nei metodi stessi
----------------------------------
-*PRIMITIVE*
----------------------------------
+- il problema di dove e come recuperare i valori ereditati
+- come rappresentare i metodi e le loro chiamate
+- come manipolare il codice nei metodi stessi
+
+# PRIMITIVE
+
 NOME:
 DEF-CLASS
 
@@ -86,9 +86,9 @@ di <slot-name> nell'ultima istanza
 
 Se <slot-name> non è presente nella classe dell'istanza, 
 la funzione ritorna un errore
--------------------------------
-*FUNZIONI*
--------------------------------
+
+# FUNZIONI
+
 NOME: 
 check-method
 
@@ -150,9 +150,8 @@ PARTICOLARI:
 Prende come argomenti <method-name> e <method-spec>
 Inserisce con una funzione lambda il parametro 
 this in cima alla lista degli argomenti
--------------------------------
-*ALCUNI TEST EFFETTUATI*
--------------------------------
+
+# ALCUNI TEST EFFETTUATI
 
 (def-class 'person nil 'name "Eve" 'age 56)
 Risultato: PERSON
