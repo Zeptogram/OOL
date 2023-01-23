@@ -23,7 +23,6 @@ SINTASSI:
 PARTICOLARI:
 Definisce la struttura di una classe e la memorizza in una locazione 
 centralizzata (variabile globale -> *classes-specs*)
-
 Se le condizioni di invocazione sono rispettate, il metodo ritorna 
 il nome della classe 
 -----------------------------
@@ -35,10 +34,8 @@ SINTASSI:
 
 PARTICOLARI:
 Crea un'istanza di una classe definita tramite def-class
-
 Se il nome dell'istanza esiste gia', l'istanza precedente viene 
 sostituita da quella attuale
-
 Se non esiste, ritorna un errore
 -------------------------------
 NOME:
@@ -83,7 +80,6 @@ SINTASSI:
 PARTICOLARI:
 Ritorna il valore associato all'ultimo elemento 
 di <slot-name> nell'ultima istanza
-
 Se <slot-name> non è presente nella classe dell'istanza, 
 la funzione ritorna un errore
 
@@ -119,7 +115,6 @@ check-slot-exists
 
 PARTICOLARI:
 Se la classe inserita non ha <slots>, ritorna nil.
-
 Se <slots> esiste all'interno della classe, il metodo 
 ritorna T.
 -------------------------------
@@ -129,7 +124,6 @@ get-class-data
 PARTICOLARI:
 Se la classe non ha <slot-name>, lo ricerca all'interno 
 delle classi genitori.
-
 Se non viene trovato <method> o <slot-name>, ritorna un 
 errore.
 -------------------------------
@@ -139,7 +133,6 @@ process-method
 PARTICOLARI:
 Viene chiamata la rewrite-method-code per inserire il 
 parametro "this".
-
 Permette di richiamare un metodo con la notazione 
 funzionale
 -------------------------------
